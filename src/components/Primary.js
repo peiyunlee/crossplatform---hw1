@@ -1,9 +1,9 @@
-import "./Primary.css";
-import photo from '../assets/images/header-img.png'
+import photo from "../assets/images/header-img.png";
 import codepen from "../assets/images/codepen.png";
 import github from "../assets/images/github.png";
 import medium from "../assets/images/medium.png";
 import facebook from "../assets/images/facebook.png";
+import { Link } from "react-router-dom";
 
 function Primary() {
   return (
@@ -24,9 +24,13 @@ function Primary() {
               Now I’m studying for my master's degree in Digital Technology
               Design at NTUE.
             </p>
-            <a href="" class="primary__link-button link-button">
+            <Link
+              to="/works/All"
+              href=""
+              class="primary__link-button link-button"
+            >
               View Works
-            </a>
+            </Link>
             <div class="primary__social">
               <img src={github} alt="" />
               <img src={codepen} alt="" />
@@ -34,11 +38,7 @@ function Primary() {
               <img src={medium} alt="" />
             </div>
           </div>
-          <img
-            class="primary__main-img"
-            src={photo}
-            alt=""
-          ></img>
+          <img class="primary__main-img" src={photo} alt=""></img>
         </div>
       </section>
     </>

@@ -1,30 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Fira+Sans+Extra+Condensed:ital,wght@1,700&family=Philosopher:wght@700&display=swap");
-body {
-  margin: 0;
-  font-family: "Noto sans TC", sans-serif;
-  letter-spacing: 1px;
-  color: #333;
-  line-height: 1.4;
-}
 
-a {
-  text-decoration: none;
-  color: #000;
-}
 
-.wrapper-content {
-  box-sizing: border-box;
-  position: relative;
-  width: 100%;
-  max-width: 1024px;
-  margin: 0 auto;
-}
-
-@media screen and (max-width: 1023px) {
-  .wrapper-content {
-    max-width: auto;
-  }
-}
 
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Fira+Sans+Extra+Condensed:ital,wght@1,700&family=Philosopher:wght@700&display=swap");
 body {

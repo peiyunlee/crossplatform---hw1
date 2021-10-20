@@ -1,35 +1,30 @@
 import "./Header.css";
 import { useState } from "react";
+import { Link } from 'react-router-dom'
 
 function Header() {
   const [classname, setclassname] = useState("header-content wrapper-content");
 
   return (
     <header>
-      <div id="header-content" class={classname}>
-        <h1 class="logo">PEI-YUN</h1>
+      <div id="header-content" className={classname}>
+        <h1 className="logo">PEI-YUN</h1>
         <div
           id="hamburger"
-          class="wrapper-hamburger"
+          className="wrapper-hamburger"
           onClick={() => {
             if (classname === "header-content wrapper-content")
               setclassname(classname + " header-content_active");
             else setclassname("header-content wrapper-content");
           }}
         >
-          <div class="cross-button-top cross-button"></div>
-          <div class="cross-button-bottom cross-button"></div>
+          <div className="cross-button-top cross-button"></div>
+          <div className="cross-button-bottom cross-button"></div>
         </div>
-        <nav class="header-nav">
-          <a href="" class="link-text">
-            HOME
-          </a>
-          <a href="" class="link-text">
-            ABOUT
-          </a>
-          <a href="" class="link-text">
-            WORKS
-          </a>
+        <nav className="header-nav">
+          <Link to="/" className="link-text">HOME</Link>
+          <Link to="/" className="link-text">ABOUT</Link>
+          <Link to="/works/All" className="link-text">WORKS</Link>
         </nav>
       </div>
     </header>
