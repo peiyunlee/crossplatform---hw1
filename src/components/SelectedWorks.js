@@ -28,7 +28,7 @@ function SelectedWorks() {
               </Link>
               <div>
                 or{" "}
-                <Link to="/works" className="work__link link-text">
+                <Link to="/works/All" className="work__link link-text">
                   View all works
                 </Link>
               </div>
@@ -53,7 +53,7 @@ function SelectedWorks() {
               </Link>
               <div>
                 or{" "}
-                <Link to="/works" className="work__link link-text">
+                <Link to="/works/All" className="work__link link-text">
                   View all works
                 </Link>
               </div>
@@ -74,7 +74,7 @@ function SelectedWorks() {
               </Link>
               <div>
                 or{" "}
-                <Link to="/works" className="work__link link-text">
+                <Link to="/works/All" className="work__link link-text">
                   View all works
                 </Link>
               </div>
